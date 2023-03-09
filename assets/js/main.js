@@ -9,6 +9,9 @@
 
 
 // Salvo in una variabile il prezzo per kilometro
+
+const pricePerKm = 0.21
+
 // Creo due input per chiedere all'utente i km e l'età
 // Creo un bottone a cui aggiungo un EventListener e lavoro nella sua funzione anonima
     // salvo i dati inseriti dall'utente in due variabili e ne stampo in console i value 
