@@ -34,6 +34,9 @@ function (){
 
     document.getElementById ("ticketUsername").innerHTML =  usernameEl;
 
+    
+
+
 
     // moltiplico i chilometri dell'utente per il prezzo per kilometro e lo arrotondo con toFixed
 
@@ -48,7 +51,7 @@ function (){
         const discount20 = userPrice * 0.2; 
         userPrice = userPrice - discount20;
         userPrice = userPrice.toFixed(2);
-
+        document.getElementById ("ticketDiscount").innerHTML =  "Biglietto Minori";
         console.log( `€ ${userPrice} dicountedPrice`);
 
         // altrimenti, se over 65 calcolo il 40% di sconto e lo applico al suo prezzo, quindi lo arrotondo con toFixed e lo stampo in console
@@ -57,7 +60,10 @@ function (){
         const discount40 = userPrice * 0.4; 
         userPrice = userPrice - discount40;
         userPrice = userPrice.toFixed(2);
+        document.getElementById ("ticketDiscount").innerHTML =  "Biglietto Over 65";
         console.log( `€${userPrice} discounted Price`);
+     } else {
+        document.getElementById ("ticketDiscount").innerHTML =  "Biglietto Standard";
      }
         
 
