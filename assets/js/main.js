@@ -27,21 +27,40 @@ function (){
     const userAgeEl = document.getElementById ("userAge").value;
     console.log(userAgeEl, "userAge");
 
+    // moltiplico i chilometri dell'utente per il prezzo per kilometro e lo arrotondo con toFixed
+
     let userPrice = userKmEl * pricePerKm; 
 
     userPrice = userPrice.toFixed(2);
-    console.log ( `€ ${userPrice} `)
+    console.log ( `€ ${userPrice}`)
+
+     // verifico se l'utente ha diritto allo sconto 
+    //se è minorenne calcolo il 20% di sconto e lo applico al suo prezzo, quindi lo arrotondo con toFixed e lo stampo in console
+     if (userAgeEl < 18 ) {
+        const discount20 = userPrice * 0.2; 
+        userPrice = userPrice - discount20;
+        userPrice = userPrice.toFixed(2);
+
+        console.log( `€ ${userPrice} dicountedPrice`);
+
+        // altrimenti, se over 65 calcolo il 40% di sconto e lo applico al suo prezzo, quindi lo arrotondo con toFixed e lo stampo in console
+     } else if (userAgeEl >= 65) {
+
+        const discount40 = userPrice * 0.4; 
+        userPrice = userPrice - discount40;
+        userPrice = userPrice.toFixed(2);
+        console.log( `€${userPrice} discounted Price`);
+     }
+        
 
 
 }
     
     )
-    // moltiplico i chilometri dell'utente per il prezzo per kilometro e lo arrotondo con toFixed
 
 
-    // verifico se l'utente ha diritto allo sconto 
-        //se è minorenne calcolo il 20% di sconto e lo applico al suo prezzo, quindi lo arrotondo con toFixed e lo stampo in console
-            // altrimenti, se over 65 calcolo il 40% di sconto e lo applico al suo prezzo, quindi lo arrotondo con toFixed e lo stampo in console
+
+   
 
 
 // tools
