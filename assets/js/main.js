@@ -30,6 +30,11 @@ function (){
     const userAgeEl = document.getElementById ("userAge").value;
     console.log(userAgeEl, "userAge");
 
+    //mostro il nome in pagina 
+
+    document.getElementById ("ticketUsername").innerHTML =  usernameEl;
+
+
     // moltiplico i chilometri dell'utente per il prezzo per kilometro e lo arrotondo con toFixed
 
     let userPrice = userKmEl * pricePerKm; 
