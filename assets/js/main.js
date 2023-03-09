@@ -21,6 +21,9 @@ submitEl.addEventListener ("click",
     
 function (){
 
+    const usernameEl = document.getElementById ("username").value;
+    console.log (usernameEl, "username")
+
     const userKmEl = document.getElementById ("userKm").value; 
     console.log (userKmEl, "userKm");
 

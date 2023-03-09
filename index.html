@@ -13,20 +13,38 @@
 
 <body>
 
-    <header id = app_header class="text-center bg-danger text-white py-3">
+    <header id=app_header class="text-center bg-danger text-white py-3">
         <h1> Calcola il prezzo del tuo biglietto</h1>
     </header>
 
-    <main id= app_main>
+    <main id=app_main>
+        <div class="card m-3 p-3">
+            <div class="container">
+                <div class="row justify-content-between gx-2">
+                    <div class=" mb-3 col-sm-4">
+                        <label class="d-block" for="username">Nome e Cognome</label>
+                        <input class="d-block" type="text" name="username" id="username">
+                    </div>
+                    <div class="mb-3 col-sm-4">
+                        <label class="d-block" for="userKm">Km da percorrere</label>
+                        <input class="d-block" type="number" name="userKm" id="userKm">
+                    </div>
+                    <div class="mb-3  col-sm-4">
+                        <label class="d-block" for="userAge">Quanti anni hai?</label>
+                        <input class="d-block" type="number" name="userAge" id="userAge">
+                    </div>
+                    <div class="text-center">
+                        <button class="mx-2" id="submit"> Genera </button>
+                        <button class="mx-2" id="reset"> Annulla </button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <label for="userKm">Quanti kilometri devi percorrere?</label>
-        <input type="number" name="userKm" id="userKm">
-        <br>
-        <label for="userAge">Quanti anni hai?</label>
-        <br>
-        <input type="number" name="userAge" id="userAge">
-        <br>
-        <button id="submit"> Invia!</button>
+        <!-- /input card -->
+
+        <div class="card m-3 p-3"></div>
+
     </main>
 
 
