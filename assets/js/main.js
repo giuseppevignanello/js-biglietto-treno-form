@@ -62,6 +62,7 @@ function (){
         userPrice = userPrice.toFixed(2);
         document.getElementById ("ticketDiscount").innerHTML =  "Biglietto Minori";
         console.log( `€ ${userPrice} dicountedPrice`);
+        document.getElementById ("ticketPrice").innerHTML =  `€ ${userPrice}`;
 
         // altrimenti, se over 65 calcolo il 40% di sconto e lo applico al suo prezzo, quindi lo arrotondo con toFixed e lo stampo in console
      } else if (userAgeEl === "over65" ) {
@@ -71,8 +72,10 @@ function (){
         userPrice = userPrice.toFixed(2);
         document.getElementById ("ticketDiscount").innerHTML =  "Biglietto Over 65";
         console.log( `€${userPrice} discounted Price`);
+        document.getElementById ("ticketPrice").innerHTML =  `€ ${userPrice}`;
      } else {
         document.getElementById ("ticketDiscount").innerHTML =  "Biglietto Standard";
+        document.getElementById ("ticketPrice").innerHTML =  `€ ${userPrice}`;
      }
         
 
