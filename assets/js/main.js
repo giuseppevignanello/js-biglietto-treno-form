@@ -34,6 +34,15 @@ function (){
 
     document.getElementById ("ticketUsername").innerHTML =  usernameEl;
 
+    // produco un numero di carrozza casuale 
+
+    const carriage = Math.floor(Math.random() * (10 - 1) + 1);
+    document.getElementById ("ticketCarriage").innerHTML =  carriage;
+
+    // produco un numero cp
+
+    const cpNumber = Math.floor(Math.random() * (999999 - 000001));
+    document.getElementById ("ticketCode").innerHTML =  cpNumber;
     
 
 
