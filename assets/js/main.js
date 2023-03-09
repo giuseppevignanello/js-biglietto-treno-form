@@ -39,7 +39,7 @@ function (){
 
      // verifico se l'utente ha diritto allo sconto 
     //se è minorenne calcolo il 20% di sconto e lo applico al suo prezzo, quindi lo arrotondo con toFixed e lo stampo in console
-     if (userAgeEl < 18 ) {
+     if (userAgeEl === "minorenne" ) {
         const discount20 = userPrice * 0.2; 
         userPrice = userPrice - discount20;
         userPrice = userPrice.toFixed(2);
@@ -47,7 +47,7 @@ function (){
         console.log( `€ ${userPrice} dicountedPrice`);
 
         // altrimenti, se over 65 calcolo il 40% di sconto e lo applico al suo prezzo, quindi lo arrotondo con toFixed e lo stampo in console
-     } else if (userAgeEl >= 65) {
+     } else if (userAgeEl === "over65" ) {
 
         const discount40 = userPrice * 0.4; 
         userPrice = userPrice - discount40;

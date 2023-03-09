@@ -23,15 +23,20 @@
                 <div class="row justify-content-between gx-2">
                     <div class=" mb-3 col-sm-4">
                         <label class="d-block" for="username">Nome e Cognome</label>
-                        <input class="d-block" type="text" name="username" id="username">
+                        <input class="d-block p-1" type="text" name="username" id="username">
                     </div>
                     <div class="mb-3 col-sm-4">
                         <label class="d-block" for="userKm">Km da percorrere</label>
-                        <input class="d-block" type="number" name="userKm" id="userKm">
+                        <input class="d-block p-1" type="number" name="userKm" id="userKm">
                     </div>
                     <div class="mb-3  col-sm-4">
-                        <label class="d-block" for="userAge">Quanti anni hai?</label>
-                        <input class="d-block" type="number" name="userAge" id="userAge">
+                        <label class="d-block" for="userAge"> Quanti anni hai?</label>
+                        <select class="d-block p-1 form-select border-dark rounded-0" id="userAge" aria-label="Default select example">
+                            <option selected>Open this select menu</option>
+                            <option value="minorenne">Minorenne</option>
+                            <option value="maggiorenne">Maggiorenne</option>
+                            <option value="over65">Over 65</option>
+                          </select>
                     </div>
                     <div class="text-center">
                         <button class="mx-2" id="submit"> Genera </button>
@@ -43,7 +48,7 @@
 
         <!-- /input card -->
 
-        <div class="card m-3 p-3"></div>
+        <div class="card m-3 p-3\"></div>
 
     </main>
 
