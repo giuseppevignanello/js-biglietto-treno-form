@@ -16,6 +16,11 @@ const pricePerKm = 0.21
 // Creo un bottone a cui aggiungo un EventListener e lavoro nella sua funzione anonima
 // salvo i dati inseriti dall'utente in due variabili e ne stampo in console i value 
 const submitEl = document.getElementById("submit");
+const resetEl = document.getElementById("reset");
+const ticketElement = document.getElementById ("ticket")
+
+
+
 
 submitEl.addEventListener("click",
 
@@ -23,7 +28,7 @@ submitEl.addEventListener("click",
 
         //genero il biglietto 
 
-        const ticketElement = document.getElementById ("ticket")
+      
         ticketElement.className = ("d-block")
 
         const usernameEl = document.getElementById("username").value;
@@ -89,7 +94,17 @@ submitEl.addEventListener("click",
 
 )
 
+//Aggiungo il bottone di reset 
 
+ resetEl.addEventListener("click", 
+
+ function () {
+     document.getElementById("username").value = "";
+     document.getElementById("userKm").value = "";
+     document.getElementById("userAge").value = ""
+ }
+
+ )
 
 
 
